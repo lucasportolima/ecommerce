@@ -16,7 +16,9 @@
                 <img src="http://placehold.it/350x250" alt="" />
             </a>
             <div class="caption">
-                <h3>{{ product.name }}</h3>
+                <a href="{% url 'product' product.slug %}">
+                    <h3>{{ product.name }}</h3>
+                </a>
                 <p>{{ product.description|linebreaks }}</p>
                 <p><a href="#" class="btn btn-success" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
             </div>
